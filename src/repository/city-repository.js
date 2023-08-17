@@ -1,6 +1,5 @@
 const { Op } =require('sequelize');
 
-const city = require('../models/city');
 const {City} = require('../models/index');
 
 class CityRepository {
