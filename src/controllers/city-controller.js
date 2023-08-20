@@ -11,7 +11,7 @@ const create = async (req, res)=>{
             success: true,
             message: 'Successfully created a City',
             err:{}
-        })
+        });
     } catch (error) {
         console.log(error);
         return res.status(500).json({
@@ -19,7 +19,7 @@ const create = async (req, res)=>{
             success: false,
             message: 'Not able to create a City',
             err:error
-        })
+        });
     }
 }
 // DELETE.-> /city/:id
